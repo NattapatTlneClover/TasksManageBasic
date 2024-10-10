@@ -15,3 +15,29 @@
     padding: 0;
     height: 100%;
   }
+  
+
+/* For WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;  /* Width for vertical scrollbar */
+  height: 12px; /* Height for horizontal scrollbar */
+  opacity: 0;    /* Hide scrollbar by default */
+  transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.8); /* Light gray with 80% opacity */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.9); /* Gray with 90% opacity */
+  border-radius: 10px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 1); /* Darker gray with full opacity when hovering */
+}
