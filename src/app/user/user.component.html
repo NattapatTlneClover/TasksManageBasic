@@ -1,6 +1,11 @@
-<div>
-    <button [class.active]="selected" (click)="onSelectUser()">
-        <img [src]="imagePath" [alt]="user.name" />
-        <span>{{ user.name }}</span>
-    </button>
-</div>
+<!-- perform card component -->
+<app-card>
+
+    <div>
+        <button [class.active]="selected" (click)="onSelectUser()">
+            <img [src]="imagePath" [alt]="user.name" />
+            <span>{{ user.name }}</span>
+        </button>
+    </div>
+    
+</app-card>

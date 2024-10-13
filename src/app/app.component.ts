@@ -22,13 +22,17 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class AppComponent {
   title = 'first-angular-app';
+
+  //Declaration variable
   selectedUserId?: string;
   users = DUMMY_USERS;
 
+  // Method selecteduser Use in html (want value in selectedUserId )
   get selectedUser() {
     return this.users.find((user) => user.id === this.selectedUserId);
   }
 
+  // Method received user.id from user component
   onSelectUser(id: string) {
     this.selectedUserId = id;
   }
